@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color:hsl(0, 0%, 94%) ;
+}
+
+.ageSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.giveAge_container {
+    background-color: hsl(0, 0%, 100%);
+    padding-block: 2rem;
+    padding-inline: 3rem;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px 10px 100px 10px;
+}
+
+.submitForm_container {
+    position: absolute;
+    top: 27.2%;
+    right: 10%;
+    
+}
+
+.Age_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.userInfos_container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1.5rem;
+    border-bottom: 2px solid hsl(0, 0%, 86%);
+    padding-bottom: 4rem;
+    margin-right: 6rem;
+}
+
+.ageOfUser_container {
+    margin-top: 3rem;
+    font-size: 4.5rem;
+    font-weight: 700;
+}
+
+span {
+    color: hsl(259, 100%, 65%);
+}
+
+::placeholder {
+    font-size: 1rem;
+    font-weight: 600;
+    color: hsl(0, 1%, 44%);
+}
+
+.Age_container label {
+    color: hsl(0, 1%, 44%);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+input[type="number"] {
+    padding-inline-start: 1rem;
+    padding-inline-end: 2rem;
+    padding-block: 0.5rem;
+    width: 8rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+input[type="submit"] {
+    border-radius: 5px;
+    padding-inline: 2rem;
+    padding-block: 0.8rem;
+    background-color: hsl(259, 100%, 65%);
+    color: hsl(0, 0%, 100%) ;
+    border: solid 2px hsl(0, 0%, 100%);
+}
+
+input[type="submit"]:hover {
+    background-color: hsl(259, 74%, 75%);
+    cursor: pointer;
+    border: solid 2px rgb(255, 0, 0);
+}
+
+.errorStyle {
+    color:hsl(0, 100%, 67%) ;
+}
+
+.inputError{
+    border-color:hsl(0, 100%, 67%) ;
+}
+
+.hideparagraphe {
+    color: hsl(0, 0%, 100%);
+}

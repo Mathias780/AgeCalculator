@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:wght@100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Age calculator app</title>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <section class="ageSection">
+    <div class="giveAge_container">
+      <form id="informationUser">
+      <div class="userInfos_container">
+          <div class="Age_container">
+            <label for="day">DAY</label>
+            <input type="number" id="day" name="dayOfBirth" placeholder="DD" class="" required>
+            <p id="wrongDay" class="errorStyle hideparagraphe">Must be a valid day</p>
+          </div>
+          <div class="Age_container">
+            <label for="month">MONTH</label>
+            <input type="number" id="month" name="monthOfBirth" placeholder="MM" class="" required>
+            <p id="wrongMonth" class="errorStyle hideparagraphe">Must be a valid month</p>
+          </div>
+          <div class="Age_container">
+            <label for="year">YEAR</label>
+            <input type="number" id="year" name="yearOfBirth" placeholder="YYYY" class="" required>
+            <p id="wrongYear" class="errorStyle hideparagraphe">Must be in the past</p>
+          </div>
+          <div class="submitForm_container">
+            <input type="submit" id="submitBirthInformation" value="Submit">
+          </div>
+      </div>
+    </form>
+    <div class="ageOfUser_container">
+      <p><span id="yearAge">...</span> years</p>
+      <p><span id="monthsAge">...</span> months</p>
+      <p><span id="daysAge">...</span> days</p>
+    </div>
+    </div>
+  </section>
+</body>
+</html>
